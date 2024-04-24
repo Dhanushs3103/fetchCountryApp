@@ -3,8 +3,54 @@ body {
     text-align: center;
 }
 
-.card {
-    border: 1px solid black;
-    width: 300px;
+#root {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    width: fit-content;
+    margin: auto;
+    margin-top: 50px;
+}
+
+button {
     padding: 10px;
+    border-radius: 10px;
+    border: 0;
+    background-color: #4b4fc1;
+    color: aliceblue;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #1657c8;
+}
+
+select {
+    padding: 10px 20px;
+    margin-left: 10px;
+    border-radius: 10px;
+    border: 0;
+    background-color: #36e00cd3;
+    color: aliceblue;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+}
+
+select:hover {
+    background-color: #14ba22;
+}
+
+.card {
+    border-radius: 10px;
+    width: 280px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    padding: 10px;
+    text-align: left;
+}
+
+.card > p {
+    font-weight: bold
 }
